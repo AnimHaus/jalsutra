@@ -5,6 +5,8 @@ import Link from "next/link";
 import { useLenis } from "lenis/react";
 import { gsap } from "../lib/gsap";
 import { NAV_LINKS } from "../lib/nav";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 
 export default function Header() {
   const [open, setOpen] = useState(false);
