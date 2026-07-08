@@ -44,7 +44,7 @@ const TESTIMONIALS = [
 
 /* ─── 3-D Bottle ────────────────────────────────────────────────────── */
 function BottleModel({ flipX = false }: { flipX?: boolean }) {
-  const { scene } = useGLTF("/WaterBottle.glb");
+  const { scene } = useGLTF("https://pub-936a2a79cb9b473fabc46e4ad35a3e2e.r2.dev/WaterBottle.glb");
   const groupRef = useRef<THREE.Group>(null!);
 
   useFrame((state) => {
@@ -239,7 +239,7 @@ export default function Testimonial() {
   );
 }
 
-useGLTF.preload("/WaterBottle.glb");
+useGLTF.preload("https://pub-936a2a79cb9b473fabc46e4ad35a3e2e.r2.dev/WaterBottle.glb");
 
 // Floating bubble positions for decoration
 const BUBBLES = [
